@@ -68,5 +68,5 @@ def _getAverage(selection):
     average.append(aveY)
     average.append(aveZ)
     return average
-    
+
 softCluster()

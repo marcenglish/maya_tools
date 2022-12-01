@@ -94,7 +94,7 @@ proc SSB.evalNurbs(){
 //
 
 proc SSB.buildWindow(){
-    rowColumnLayout -numberOfColumns 2 
+    rowColumnLayout -numberOfColumns 2
                     -columnSpacing 2 5
                     -rowSpacing 1 1
                     -columnAttach 1 "right" 0
@@ -102,9 +102,9 @@ proc SSB.buildWindow(){
                     -columnAttach 2 "left" 0
                     -adjustableColumn 2;
             text -label "Soft Select:" -al "right";
-            rowLayout -numberOfColumns 2 
-                      -columnAlign 1 "left" 
-                      -columnAlign 2 "center" 
+            rowLayout -numberOfColumns 2
+                      -columnAlign 1 "left"
+                      -columnAlign 2 "center"
                       -adjustableColumn 1;
                 checkBox -label ""
                          -onCommand "softSelect -sse 1"
@@ -122,8 +122,8 @@ proc SSB.buildWindow(){
                     menuItem -label "Object" -data 3;
             setParent ..;
             text -label "Falloff radius:" -al "right";
-            floatSliderGrp -field true 
-                           -minValue 0.0 
+            floatSliderGrp -field true
+                           -minValue 0.0
                            -maxValue 100.0
                            -changeCommand "SSB.changeFalloffRadius(\"#1\")";
             text -label "Falloff Curve:" -al "right";
